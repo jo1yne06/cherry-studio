@@ -1761,6 +1761,7 @@
   "provider": {
     "302ai": "302.AI",
     "aihubmix": "AiHubMix",
+    "aionly": "AiOnly",
     "alayanew": "Alaya NeW",
     "anthropic": "Anthropic",
     "aws-bedrock": "AWS Bedrock",
@@ -1814,8 +1815,7 @@
     "xirang": "天翼云息壤",
     "yi": "零一万物",
     "zhinao": "360 智脑",
-    "zhipu": "智谱 AI",
-    "aionly": "AiOnly"
+    "zhipu": "智谱 AI"
   },
   "restore": {
     "confirm": {

@@ -2181,7 +2181,7 @@ const migrateConfig = {
       state.llm.providers = moveProvider(state.llm.providers, 'aionly', 17)
       return state
     } catch (error) {
-      logger.error('migrate 124 error', error as Error)
+      logger.error('migrate 137 error', error as Error)
       return state
     }
   }
