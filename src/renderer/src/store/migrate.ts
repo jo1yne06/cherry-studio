@@ -2336,10 +2336,23 @@ const migrateConfig = {
   },
   '145': (state: RootState) => {
     try {
-      addProvider(state, 'aionly')
+      if (state.settings) {
+        if (state.settings.showMessageOutline === undefined || state.settings.showMessageOutline === null) {
+          state.settings.showMessageOutline = false
+        }
+      }
       return state
     } catch (error) {
       logger.error('migrate 145 error', error as Error)
+      return state
+    }
+  },
+  '146': (state: RootState) => {
+    try {
+      addProvider(state, 'aionly')
+      return state
+    } catch (error) {
+      logger.error('migrate 146 error', error as Error)
       return state
     }
   }
